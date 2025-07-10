@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Cactus+Classical+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+@import url("https://use.typekit.net/vko8zhd.css");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+.selected_rooms_section {
+  margin-bottom: 2rem;
+}
+
+.focus_container {
+  display: flex;
+  height: 100vh;
+  padding: 5.0625rem 0 0 7.125rem;
+}
+
+.focus_instruction {
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.unselected_rooms_section {
+}
+
+.room-selector.highlighted {
+  transform: scale(1.05);
+  transition: transform 0.2s ease;
+}
+
+.room-selector.highlighted:hover {
+  transform: scale(1.1);
+}
+
+.room-selector.dimmed {
+  pointer-events: none;
+}
+
+.room-count-badge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: #007bff;
+  color: white;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.view_options {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Open Sans", sans-serif;
+  /* font-family: "Funnel Sans", sans-serif; */
+  font-size: 1rem;
+  width: 100%;
+  font-weight: 700;
+}
+
+.view_options svg {
+  margin-left: 1rem;
+}
+
+.view_options_unselected {
+  transition: transform 0.3s ease-in-out;
+  transform: rotate(0deg);
+}
+
+.view_options_selected {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease-in-out;
+}
+
+.unselected_room_grid {
+  display: grid;
+  padding-block: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 1rem;
+  column-gap: 1rem;
+  max-width: 900px;
+  width: 100%;
+}
+
+@media (max-width: 769px) {
+  .focus_container {
+    flex-direction: column;
+    margin: 0;
+    padding: 4rem 2.5rem 0 2.5rem;
+  }
+
+  .focus_option_section {
+    margin: 0;
+    padding: 0;
+  }
+
+  .selected_rooms_section {
+    margin: 0;
+  }
+
+  .focus_grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .unselected_room_grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 769px) {
+}

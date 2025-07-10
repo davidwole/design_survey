@@ -1,0 +1,88 @@
+@import url("https://use.typekit.net/vko8zhd.css");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+.zip_page_container {
+  display: flex;
+}
+
+.zip_label {
+  padding-top: 14.5625rem;
+  padding-left: 5.125rem;
+}
+
+.zip_label h1 {
+  margin-bottom: 1.95rem;
+  font-family: baskerville-display-pt, serif;
+  /* font-family: "Cactus Classical Serif", serif; */
+  font-size: 2.7rem;
+  text-transform: uppercase;
+}
+
+.zip_label p {
+  font-size: 1rem;
+  font-family: "Open Sans", sans-serif;
+  /* font-family: "Funnel Sans", sans-serif; */
+}
+
+.zip_input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(243, 240, 235);
+}
+
+.zip_input input {
+  background-color: transparent;
+  padding: 2rem 1rem;
+  font-size: 2.5rem;
+  width: 10rem;
+  border: none;
+  outline: none;
+}
+
+@media (max-width: 768px) {
+  .zip_page_container {
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    padding: 4rem 2.5rem 0 2.5rem;
+  }
+
+  .zip_label {
+    margin: 0;
+    padding: 0;
+  }
+
+  .zip_label h1 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 2.2rem;
+  }
+
+  .zip_label p {
+    display: none;
+  }
+
+  .zip_input {
+    margin-top: 15rem;
+    background-color: transparent;
+    border-bottom: 1px solid black;
+  }
+
+  .zip_input input {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
+
+@media (min-width: 769px) {
+  .zip_label {
+    width: 57%;
+  }
+
+  .zip_input {
+    width: 50%;
+    height: 100vh;
+  }
+}

@@ -1,0 +1,33 @@
+.name_input {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(243, 240, 235);
+  width: 50%;
+}
+
+.name_input input {
+  background-color: transparent;
+  padding: 2rem 1rem;
+  font-size: 2.5rem;
+  width: 23rem;
+  border: none;
+  outline: none;
+}
+
+.name_mobile_input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15rem;
+}
+
+.name_mobile_input input {
+  border: none;
+  border-bottom: 1px solid black;
+  text-align: center;
+  padding: 0.5rem;
+  width: 19rem;
+  font-size: 1.5rem;
+}

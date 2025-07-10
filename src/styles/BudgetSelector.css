@@ -1,0 +1,23 @@
+@import url("https://use.typekit.net/vko8zhd.css");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+.budget_selector_container {
+  margin-block: 1rem;
+}
+
+.budget_selector {
+  border: none;
+  padding: 3.1875rem 3.125rem;
+  width: 17.875rem;
+  background-color: rgb(243, 240, 235);
+  font-family: baskerville-display-pt, serif;
+  /* font-family: "Funnel Sans", sans-serif; */
+  font-size: 1.375rem;
+  font-weight: 500;
+}
+
+.budget_selector:hover {
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+  box-shadow: (0, 0, 0, 0.1) 0px 7px 20px 0px;
+}

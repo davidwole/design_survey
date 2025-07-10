@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Cactus+Classical+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://use.typekit.net/vko8zhd.css");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+.style_container {
+  display: flex;
+  font-family: "Open Sans", sans-serif;
+  /* font-family: "Funnel Sans", sans-serif; */
+  padding: 6rem 7.5rem 2rem 8.5rem;
+}
+
+.descriptions {
+  width: 60%;
+}
+
+.sub_styles {
+  margin-top: 5rem;
+}
+
+.main_style {
+  font-size: 2.7rem;
+  /* font-family: "Cactus Classical Serif", serif; */
+  font-family: baskerville-display-pt, serif;
+
+  margin-bottom: 3rem;
+}
+
+.main_style span {
+  text-decoration: underline;
+}
+
+.substyle_subheading {
+  font-size: 1rem;
+  margin-top: 2.6875rem;
+  margin-bottom: 0.6875rem;
+}
+
+.style_subheading {
+  font-size: 1rem;
+  margin-block: 0.6875rem;
+}
+
+.style_body_text {
+  line-height: 24px;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  width: 16rem;
+  display: inline-block;
+  break-inside: avoid;
+}
+
+.style_subheading_body_text {
+  width: 90%;
+}
+
+.main_style_image {
+  margin-block: 2.5rem;
+}
+
+.flex_substyles {
+  display: flex;
+  width: 27.0625rem;
+  justify-content: space-between;
+  margin-bottom: 2.5rem;
+}
+
+.main_style_body_text {
+  width: 34rem;
+}
+
+.substyle_group {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 1rem;
+  column-gap: 1rem;
+  margin-bottom: 8rem;
+}
+
+.substyle_group h5 {
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .style_container {
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+  }
+
+  .main_style {
+    font-size: 1.7rem;
+    word-spacing: 0;
+    text-align: center;
+  }
+
+  .substyle_group {
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 15rem;
+  }
+
+  .descriptions {
+    width: 100%;
+    padding: 4rem 2.5rem 0 2.5rem;
+  }
+
+  .style_mobile_images {
+    column-count: 2;
+    column-gap: 1rem;
+  }
+
+  .style_mobile_images img {
+    break-inside: avoid;
+    display: inline-block;
+    margin-bottom: 0.75rem;
+  }
+}
