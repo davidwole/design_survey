@@ -13,13 +13,13 @@ export default function GalleryImage({ imageData }: GalleryImageProps) {
   const [checked, setChecked] = useState(false);
 
   useEffect(() => {
-    const isSelected = selectedImages.some((img) => img._id === imageData._id);
+    const isSelected = selectedImages.some((img) => img.id === imageData.id);
     setChecked(isSelected);
-  }, [selectedImages, imageData._id]);
+  }, [selectedImages, imageData.id]);
 
   const checkHandler = () => {
     if (checked) {
-      removeSelectedImage(imageData._id);
+      removeSelectedImage(imageData.id);
     } else {
       addSelectedImage(imageData);
     }

@@ -8,7 +8,7 @@ import React, {
 } from "react";
 
 export interface ImageData {
-  _id: number;
+  id: number;
   url: string;
   title: string;
   description: string;
@@ -224,7 +224,7 @@ export const AppProvider: React.FC<{ children: ReactNode }> = ({
 
   const addSelectedImage = useCallback((image: ImageData) => {
     setAppData((prev) => {
-      const exists = prev.selectedImages.find((img) => img._id === image._id);
+      const exists = prev.selectedImages.find((img) => img.id === image.id);
       if (exists) return prev;
       const newImages = [...prev.selectedImages, image];
       return {
@@ -238,7 +238,7 @@ export const AppProvider: React.FC<{ children: ReactNode }> = ({
   const removeSelectedImage = useCallback((imageId: number) => {
     setAppData((prev) => ({
       ...prev,
-      selectedImages: prev.selectedImages.filter((img) => img._id !== imageId),
+      selectedImages: prev.selectedImages.filter((img) => img.id !== imageId),
       timestamp: prev.timestamp || Date.now(),
     }));
   }, []);

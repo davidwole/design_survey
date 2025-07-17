@@ -3,6 +3,7 @@ import GalleryImage from "./GalleryImage";
 import { ImageData } from "../context/AppContext";
 import "../styles/ImageCollage.css";
 import { API_URL } from "../CONST";
+import { imagesData } from "../data";
 
 function shuffleImages(array: ImageData[]) {
   const copy = [...array];
@@ -14,7 +15,7 @@ function shuffleImages(array: ImageData[]) {
 }
 
 export default function ImageCollage() {
-  const [images, setImages] = useState<ImageData[]>([]);
+  const [images, setImages] = useState<ImageData[]>(shuffleImages(imagesData));
 
   const getImages = async () => {
     const response = await fetch(`${API_URL}/api/style`);
@@ -23,13 +24,13 @@ export default function ImageCollage() {
   };
 
   useEffect(() => {
-    getImages();
+    // getImages();
   }, []);
 
   return (
     <div className="image_collage">
       {images.map((imageData) => (
-        <div key={imageData._id} className="collage_item">
+        <div key={imageData.id} className="collage_item">
           <GalleryImage imageData={imageData} />
         </div>
       ))}
